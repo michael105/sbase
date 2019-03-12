@@ -1,5 +1,5 @@
-## Static builds for Linux x86_64
+### Static builds for Linux x86_64
 
-compiled with minilib.
+Compiled with -O1; minilib v0.0
 
 ```
