@@ -3,7 +3,7 @@
 
 This is my fork of github.com/nee-san/sbase
 
-Working at a port to minilib,
+Working on a port to minilib,
 in order to get tiny and statical linked binaries.
 
 
