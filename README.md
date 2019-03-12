@@ -3,11 +3,11 @@
 
 This is my fork of github.com/nee-san/sbase
 
-Working at porting it to minilib,
+Working at a port to minilib,
 in order to get tiny and statical linked binaries.
 
 
-Seems quite useful, with linux x64
+Seems quite useful, linked static with minilib on linux x64
 "cat" now is 3K.
 
 	same system, 
