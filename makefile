@@ -39,7 +39,7 @@ MLIBDIR=minilib
 # Be careful with that, -Os as well as -O2 seem to be problematic
 # Maybe more functions need to be volatile ?
 #
-#OPTFLAG=-O1
+OPTFLAG=-O1
 
 # GCC
 #GCC=gcc

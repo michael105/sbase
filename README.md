@@ -24,6 +24,16 @@ Although I don't see why,
 including the sources directly (instead of building the whole libutil)
 seems to produce slightly bigger binaries.
 
+ATM, something bloats true.c and false.c.
+205Bytes for the binaries.(??)
+compared with 151 Bytes I got with "hello world", there are somehow 54 Bytes to much.
+67 Bytes, if you count the string "hello world!".
+Annoying.
+Dunno.
+Have to sort this out. **I DONT LIKE BLOATWARE!!!**
+
+
+
 ;) But porting the single binaries one after another is sort of a soothing puzzle to me,
 so I'll go with including.
 
