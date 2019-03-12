@@ -5,7 +5,7 @@
 
 
 #ifdef MLIB
-//#include "minilib.c"
+#include "minilib.c"
 #include "libutil/concat.c"
 #endif
 
