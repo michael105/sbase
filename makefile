@@ -14,11 +14,14 @@
 
 
 ifndef PROG
-PROG=cat yes echo
+PROG=cat yes
 endif
 
 # where to build object files (defaults to ./ )
 BUILDDIR=build
+
+# where should the binares go?
+BINDIR=./static_x64
 
 # Where minilib is installed, or should be installed to
 MLIBDIR=minilib
