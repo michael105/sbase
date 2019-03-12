@@ -4,9 +4,9 @@ Compiled with -O1; minilib v0.0
 
 ```
 total 20K
--rw-r--r-- 1 micha micha   73 Mar 12 07:20 README.in
--rw-r--r-- 1 micha micha   73 Mar 12 07:20 README.md
--rwxr-xr-x 1 micha micha 3.1K Mar 12 07:07 cat
--rw-r--r-- 1 micha micha  102 Mar 12 07:19 makefile
--rwxr-xr-x 1 micha micha  497 Mar 12 07:07 yes
+ micha   73 Mar 12 07:20 README.in
+ micha   73 Mar 12 07:38 README.md
+ micha 3.1K Mar 12 07:07 cat
+ micha  132 Mar 12 07:37 makefile
+ micha  497 Mar 12 07:07 yes
 ```
