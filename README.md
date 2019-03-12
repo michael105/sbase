@@ -17,5 +17,20 @@ Seems quite useful, linked static with minilib on linux x64
 	static with musl: 26K (or even 32K)
 
 
+
+## Notes
+
+Although I don't see why,
+including the sources directly (instead of building the whole libutil)
+seems to produce slightly bigger binaries.
+
+;) But porting the single binaries one after another is sort of a soothing puzzle to me,
+so I'll go with including.
+
+Need to put ifndefs into the sources.
+
+
+
+
 Michael (misc) Myer, misc.myer@zoho.com, 2019
 
