@@ -1,4 +1,4 @@
-### suckless linux tools
+# suckless linux tools
 
 
 This is my fork of github.com/nee-san/sbase
