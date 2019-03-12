@@ -14,7 +14,7 @@
 
 
 ifndef PROG
-PROG=cat yes
+PROG=cat yes echo
 endif
 
 # where to build object files (defaults to ./ )

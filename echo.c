@@ -1,6 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 #include <stdio.h>
 #include <string.h>
+
+#ifdef MLIB
+#include "minilib.c"
+#include "libutil/fshut.c"
+#include "libutil/putword.c"
+#endif
+
 #include "util.h"
 
 int

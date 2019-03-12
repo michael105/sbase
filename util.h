@@ -1,4 +1,7 @@
 /* See LICENSE file for copyright and license details. */
+#ifndef util_h
+#define util_h
+
 #include <sys/types.h>
 
 #include <regex.h>
@@ -82,3 +85,7 @@ size_t unescape(char *);
 int mkdirp(const char *, mode_t, mode_t);
 #undef memmem
 void *memmem(const void *, size_t, const void *, size_t);
+
+
+#endif
+
