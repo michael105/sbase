@@ -3,7 +3,15 @@
 #include <string.h>
 #include <unistd.h>
 
+
+#ifdef MLIB
+//#include "minilib.c"
+#include "libutil/concat.c"
+#endif
+
 #include "util.h"
+
+
 
 static void
 usage(void)

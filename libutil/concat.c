@@ -3,6 +3,11 @@
 
 #include "../util.h"
 
+#ifdef MLIB
+#include "writeall.c"
+#include "eprintf.c"
+#endif
+
 int
 concat(int f1, const char *s1, int f2, const char *s2)
 {
