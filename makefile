@@ -14,7 +14,7 @@
 
 
 ifndef PROG
-PROG=cat yes
+PROG=cat yes true false
 endif
 
 # where to build object files (defaults to ./ )
@@ -27,10 +27,10 @@ BINDIR=./static_x64
 MLIBDIR=minilib
 
 # Don't create obj files, include evrything in one gcc run.(yourself)
-SINGLERUN=1
+#SINGLERUN=1
 
 # Include everything yourself
-NOINCLUDE=1
+#NOINCLUDE=1
 
 # include only the Text section in the resulting elf output
 #ONLYTEXT=1

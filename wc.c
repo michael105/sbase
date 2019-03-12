@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 #include <string.h>
+#include <stdio.h>
 
 #include "utf.h"
 #include "util.h"
