@@ -14,7 +14,7 @@
 
 
 ifndef PROG
-PROG=cat
+PROG=cat yes
 endif
 
 # where to build object files (defaults to ./ )
@@ -54,10 +54,20 @@ ELFTRUNC=1
 # configsettings ending here
 
 
+ifdef BUILDPROG
+		PROG=$(BUILDPROG)
+		include $(MLIBDIR)/makefile.include
+else
+
+
 #( This is a recursive makefile and will call itself with this param)
 ifdef with-minilib
 include $(MLIBDIR)/makefile.include 
 endif
+
+all:
+	@$(foreach P,$(PROG),$(MAKE) BUILDPROG=$(P) && ) true
+
 
 #Compile with minilib or without
 # Will compile with minilib, if present and found in MLIBDIR
@@ -99,3 +109,5 @@ $(MLIBDIR)/minilib.h:
 install: $(PROG)
 	cp $(PROG) /usr/local/bin
 
+endif 
+#(ifdef BUILDPROG)

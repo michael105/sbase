@@ -19,7 +19,7 @@
 
 #define LEN(x) (sizeof (x) / sizeof *(x))
 
-extern char *argv0;
+static char *argv0;
 
 void *ecalloc(size_t, size_t);
 void *emalloc(size_t);

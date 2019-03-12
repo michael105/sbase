@@ -6,7 +6,7 @@
 
 #include "../util.h"
 
-char *argv0;
+//char *argv0;
 
 static void xvprintf(const char *, va_list);
 
