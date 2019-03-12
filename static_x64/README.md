@@ -1,4 +1,11 @@
-total 8.0K
--rw-r--r-- 1 micha micha    0 Mar 12 07:10 INDEX.md
--rwxr-xr-x 1 micha micha 3.1K Mar 12 07:07 [0m[01;32mcat[0m
--rwxr-xr-x 1 micha micha  497 Mar 12 07:07 [01;32myes[0m
+## Static builds for Linux x86_64
+
+compiled with minilib.
+
+
+total 20K
+-rw-r--r-- 1 micha micha   60 Mar 12 07:13 README.in
+-rw-r--r-- 1 micha micha   60 Mar 12 07:16 README.md
+-rwxr-xr-x 1 micha micha 3.1K Mar 12 07:07 cat
+-rw-r--r-- 1 micha micha   78 Mar 12 07:15 makefile
+-rwxr-xr-x 1 micha micha  497 Mar 12 07:07 yes
