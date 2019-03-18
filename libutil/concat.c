@@ -4,8 +4,8 @@
 #include "../util.h"
 
 #ifdef MLIB
-#include "writeall.c"
-#include "eprintf.c"
+//#include "writeall.c"
+//#include "eprintf.c"
 #endif
 
 int

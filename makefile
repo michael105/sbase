@@ -14,7 +14,7 @@
 
 
 ifndef PROG
-PROG=cat yes true false
+PROG=yes true false
 endif
 
 # where to build object files (defaults to ./ )
@@ -30,16 +30,20 @@ MLIBDIR=minilib
 #SINGLERUN=1
 
 # Include everything yourself
-#NOINCLUDE=1
+NOINCLUDE=1
+
+# Include the sources of minilib with the compat headers
+# (e.g., build the source of printf within the header stdio.h)
+#INCLUDECOMPATSRC=1
 
 # include only the Text section in the resulting elf output
-#ONLYTEXT=1
+ONLYTEXT= true false yes 
 
 # Set the optimization flag (default: -O1)
 # Be careful with that, -Os as well as -O2 seem to be problematic
 # Maybe more functions need to be volatile ?
 #
-OPTFLAG=-O1
+#OPTFLAG=-Os
 
 # GCC
 #GCC=gcc
@@ -69,7 +73,8 @@ include $(MLIBDIR)/makefile.include
 endif
 
 all:
-	@$(foreach P,$(PROG),$(MAKE) BUILDPROG=$(P) && ) true
+	@$(foreach P,$(PROG),$(MAKE) BUILDPROG=$(P) OFILES=libutil && ) true
+	cd static_x64 && make
 
 
 #Compile with minilib or without

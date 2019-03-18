@@ -3,28 +3,31 @@
 // uncomment unwanted functions.
 
 /// Len of buf used by read, mprintf, ..
-//#define mini_buf 1024
+#define mini_buf 1024
 
 #define mini_start
 //#define mini_vsyscalls // vsyscalls.(+ ~92 bytes). 
-//#define mini_errno
+#define mini_errno
 // ~twice faster than standard syscalls here.
 
 
-//#define mini_write
-//#define mini_open // defines also creat
-//#define mini_close
-//#define mini_read
+#define mini_write
+#define mini_open // defines also creat
+#define mini_close
+#define mini_read
 //#define mini_lseek // defines also ftruncate, fsync
-//#define mini_puts
-//#define mini_putchar
-//#define mini_fputc
+#define mini_puts
+#define mini_putchar
+#define mini_fputc
 
 //#define mini_mprints
-//#define mini_mprintf
-//#define mini_perror
+#define mini_printf
+#define mini_fprintf
+#define mini_perror
+#define mini_fputc
 //#define mini_msprintf
-//#define mini_mfprintf
+#define mini_fprintf
+#define mini_mfprintf
 //#define mini_itohex
 //#define mini_itodec  // also conversion %d in printf
 //#define mini_dtodec  // also conversion %d in printf
@@ -39,7 +42,7 @@
 
 
 //#define mini_memfrob
-//#define mini_mstrcmp 
+#define mini_mstrcmp 
 //#define mini_mstrlen
 
 //#define  mini_memset

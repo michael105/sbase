@@ -2,11 +2,12 @@
 #include <fcntl.h>
 #include <string.h>
 #include <unistd.h>
-
+#include <stdio.h>
 
 #ifdef MLIB
-#include "libutil/concat.c"
+//#include "libutil/concat.c"
 #endif
+
 
 #include "util.h"
 
@@ -55,5 +56,5 @@ main(int argc, char *argv[])
 		}
 	}
 
-	return ret;
+	return(ret);
 }
