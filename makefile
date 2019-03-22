@@ -37,13 +37,13 @@ NOINCLUDE=1
 #INCLUDECOMPATSRC=1
 
 # include only the Text section in the resulting elf output
-ONLYTEXT= true false yes 
+#ONLYTEXT= true false yes 
 
 # Set the optimization flag (default: -O1)
 # Be careful with that, -Os as well as -O2 seem to be problematic
 # Maybe more functions need to be volatile ?
 #
-#OPTFLAG=-Os
+OPTFLAG=-Os
 
 # GCC
 #GCC=gcc

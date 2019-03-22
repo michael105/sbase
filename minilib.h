@@ -10,6 +10,7 @@
 #define mini_errno
 // ~twice faster than standard syscalls here.
 
+#define mini_stdarg
 
 #define mini_write
 #define mini_open // defines also creat
@@ -25,6 +26,7 @@
 #define mini_fprintf
 #define mini_perror
 #define mini_fputc
+#define mini_fputs
 //#define mini_msprintf
 #define mini_fprintf
 #define mini_mfprintf
@@ -42,8 +44,8 @@
 
 
 //#define mini_memfrob
-#define mini_mstrcmp 
-//#define mini_mstrlen
+#define mini_strcmp 
+#define mini_mstrlen
 
 //#define  mini_memset
 //#define  mini_memcpy
